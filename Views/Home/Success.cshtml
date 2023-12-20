@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+   
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ProductId</th>
+                <th scope="col">ProductName</th>
+                <th scope="col">ProductModelId</th>
+                <th scope="col">ProductEnteredDate</th>
+                <th scope="col">ProductActivity</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in ViewBag.Products)
+            {
+                <tr>
+                    <th scope="row">@product.ProductName</th>
+                    <td>@product.ProductName</td>
+                    <td>@product.ProductModelId</td>
+                    <td>@product.ProductEnteredDate</td>
+                    <td>@product.ProductActivity</td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

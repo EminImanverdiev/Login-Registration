@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="/Home/PostLoginValue" method="post">
+            <input type="text" placeholder="Enter your Name" id="name" name="name"><br><br>
+            <input type="text" placeholder="Enter Your Surname" id="surname" name="surname"><br><br>
+            <input type="password" placeholder="Enter Your Password"  id="password" name="password"><br><br>
+            <input type="submit" value="Submit" class="submit-btn">
+        </form>
+    </div>
+    
+</body>
+</html>
