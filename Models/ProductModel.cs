@@ -10,7 +10,7 @@ namespace RegistrationLogin.Models
             Products = new HashSet<Product>();
         }
 
-        public Guid ProductModelId { get; set; }
+        public int ProductModelId { get; set; }
         public string? ProductModelName { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
